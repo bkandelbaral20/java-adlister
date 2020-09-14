@@ -14,10 +14,7 @@ public class PageCount extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
         res.setContentType("text/html");
         PrintWriter out = res.getWriter();
-        String name = req.getParameter("page");
         count++;
         out.println("<h1> There is  " + count + " </h1>");
     }
-
-
 }

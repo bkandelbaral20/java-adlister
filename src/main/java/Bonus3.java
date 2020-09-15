@@ -18,11 +18,8 @@ public class Bonus3 extends HttpServlet {
         String product = req.getParameter("Product");
         String numberOf = req.getParameter("Quantity");
 
-
-        out.println("<h1>The name of product is " + product  +
-               "\n The number of product is " + numberOf +  "  </h1>");
-
-
+        out.println("<h1>The name of product is " + product + " </h1>");
+        out.println("<h1> The number of product is " + numberOf + " </h1>");
 
     }
 }

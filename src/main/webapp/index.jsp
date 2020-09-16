@@ -6,27 +6,16 @@
     <title><%= "some title" %></title>
 </head>
 <body>
-<div class="container">
-    <form name="login" method="get">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" id= "uname" name="uname" required>
-        <br>
+    <jsp:include page="login.jsp" />
+    <jsp:include page="partials/navbar.jsp" />
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
 
-    <button type="submit">Login</button>
-</form>
-    <%@ include file="partials/navbar.jsp" %>
-
-<%--    <p><strong>username</strong> <%= request.getParameter("binjita") %></p>--%>
-
+<%--true or false --%>
     <c:if test="true">
         <h1>Variable names should be very descriptive</h1>
     </c:if>
     <c:if test="false">
         <h1>single letter variable names are good</h1>
     </c:if>
-<%--</div>--%>
 </body>
 </html>

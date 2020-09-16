@@ -1,14 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
 
 <div class="container">
-    <form name="login" method="POST" action="/login.jsp">
+    <form name="login" method="POST" action="/login">
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
         <br>
@@ -16,6 +11,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
 
+        <br>
         <button type="submit">Login</button>
     </form>
 
@@ -31,5 +27,4 @@
     } %>
 
 </div>
-</body>
-</html>
+

@@ -3,19 +3,20 @@
 
 <html>
 <head>
-    <title><%= "some title" %></title>
+    <title><%= "some title" %>
+    </title>
 </head>
 <body>
-    <jsp:include page="login.jsp" />
-    <jsp:include page="partials/navbar.jsp" />
 
+<jsp:include page="partials/navbar.jsp"/>
+<jsp:include page="login.jsp"/>
 
 <%--true or false --%>
-    <c:if test="true">
-        <h1>Variable names should be very descriptive</h1>
-    </c:if>
-    <c:if test="false">
-        <h1>single letter variable names are good</h1>
-    </c:if>
+<c:if test="true">
+    <h1>Variable names should be very descriptive</h1>
+</c:if>
+<c:if test="false">
+    <h1>single letter variable names are good</h1>
+</c:if>
 </body>
 </html>

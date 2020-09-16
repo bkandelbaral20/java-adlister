@@ -1,4 +1,3 @@
-
 <%-- This is where all the code in the <head> tag will go --%>
 <%-- Here, we'll need 1) Page Title, 2) Bootstrap CSS --%>
 

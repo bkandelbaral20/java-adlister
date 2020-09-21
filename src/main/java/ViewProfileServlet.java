@@ -13,7 +13,7 @@ public class ViewProfileServlet extends HttpServlet {
 
 //        creating session
         HttpSession session = request.getSession();
-        boolean login = Objects.isNull(session.getAttribute("user")); 
+        boolean login = Objects.isNull(session.getAttribute("user"));
         if (login) {
             response.sendRedirect("/login");
         } else {

@@ -8,9 +8,9 @@
 <body>
     <jsp:include page="partials/navbar.jsp" />
 
-    <div class="container">
-        <h1>Viewing your profile.</h1>
-    </div>
+<%--    <div class="container">--%>
+<%--        <h1>WElcome , + ${name}</h1>--%>
+<%--    </div>--%>
 
 </body>
 </html>

@@ -8,7 +8,8 @@ public class MySQLAdsDao implements Ads {
     private Connection connection;
 
     public MySQLAdsDao(Config config) throws SQLException {
-//        converting  database with java
+//        connecting to a database
+//        Driver is the implementation of mysql driver and there is a Driver interface in the java.sql package
         DriverManager.registerDriver(new Driver());
         this.connection = DriverManager.getConnection(
               config.getUrl(),

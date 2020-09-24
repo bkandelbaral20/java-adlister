@@ -24,19 +24,12 @@ public class MySQLAdsDao implements Ads {
         List<Ad> ads = new ArrayList<>();
 //        creating and executing
         Statement statement = connection.createStatement();
-
 //        handling result sets
-//        rs is the instance of resultset
         ResultSet rs = statement.executeQuery("SELECT * FROM ads");
         while (rs.next()) { //return the next results(loop)
             Ad ad = new Ad(rs.getLong("id"),rs.getLong("user_id"), rs.getString("title")
                     ,rs.getString("description"));
             ads.add(ad);
-//            System.out.println("Here's an ads:");
-//            System.out.println("  id: " + rs.getLong("id"));
-//            System.out.println("  user_id: " + rs.getLong("user_id"));
-//            System.out.println("  title: " + rs.getString("title"));
-//            System.out.println("  description: " + rs.getString("description"));
         }
         return ads;
     }
@@ -47,7 +40,7 @@ public class MySQLAdsDao implements Ads {
                 ad.getUserId(), ad.getTitle(), ad.getDescription());
 //        creating and executing
         Statement stmt = connection.createStatement();
-        stmt.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);
+        stmt.executeUpdate(query, Statement.RETURN_GENERATED_KEYS);//id generated
         ResultSet rs = stmt.getGeneratedKeys();
        // System.out.println(rs);
         if (rs.next()) {

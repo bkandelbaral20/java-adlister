@@ -9,9 +9,9 @@
 </head>
 <body>
 <h1>Here are all the ads</h1>
-<c:forEach var="ad" items="${ads}">
+<c:forEach var="ad" items="${advertisement}">
     <div class="ad">
-        <h2>Ads : ${a}</h2>
+        <h2>Ads : ${ad.description}</h2>
     </div>
 </c:forEach>
 </body>

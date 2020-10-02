@@ -1,3 +1,5 @@
+import config.Config;
+
 import java.sql.SQLException;
 
 public class DaoFactory {

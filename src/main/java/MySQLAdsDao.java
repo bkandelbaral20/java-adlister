@@ -1,6 +1,7 @@
 import java.sql.*;
 
 import com.mysql.cj.jdbc.Driver;
+import config.Config;
 
 import java.util.ArrayList;
 import java.util.List;
